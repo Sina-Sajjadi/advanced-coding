@@ -5,7 +5,7 @@ n = int(sys.argv[1])
 bin = []
 while n>0:
     remainder = n %2
-    bin.append(remainder)
+    bin.insert(0,remainder)
     n //=2
-for digit in reversed(bin) :
+for digit in (bin) :
     print(digit,end="")
